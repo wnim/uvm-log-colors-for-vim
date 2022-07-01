@@ -13,10 +13,9 @@ But with the syntax highlighting, you will know where to focus regardless of how
 
 
 # installation
-download the file and put into ~/.vim/syntax/log.vim
+download the log.vim file and put into ~/.vim/syntax/log.vim
 
 Then add this to your ~/.vimrc configuration file:
-
 
 ```
 syntax on
