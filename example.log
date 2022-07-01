@@ -1,0 +1,10 @@
+UVM_INFO /home/foo/bar/bob/alice/foo/bar/bob/alice/env.svh(40) @ 25 ns: uvm_test_top.some_top_env.some_uvc.some_agent.some_monitor [m_im_a_monitor] this is a very important print, it is here to tell you that the index value in this loop is currently equal to : 1
+UVM_INFO /home/foo/bar/bob/alice/foo/bar/bob/alice/env.svh(41) @ 25 ns: uvm_test_top.some_top_env.some_uvc.some_agent.some_monitor [m_im_a_monitor] this is a very important print, it is here to tell you that the index value in this loop is currently equal to : 2
+UVM_WARNING /home/foo/bar/bob/alice/foo/bar/bob/alice/env.svh(42) @ 25 ns: uvm_test_top.some_top_env.some_uvc.some_agent.some_monitor [m_im_a_monitor] this is a very important print, it is here to tell you that the index value in this loop is currently equal to : 3
+UVM_WARNING /home/foo/bar/bob/alice/foo/bar/bob/alice/env.svh(43) @ 25 ns: uvm_test_top.some_top_env.some_uvc.some_agent.some_monitor [m_im_a_monitor] this is a very important print, it is here to tell you that the index value in this loop is currently equal to : 4
+UVM_ERROR /home/foo/bar/bob/alice/foo/bar/bob/alice/env.svh(44) @ 25 ns: uvm_test_top.some_top_env.some_uvc.some_agent.some_monitor [m_im_a_monitor] this is a very important print, it is here to tell you that the index value in this loop is currently equal to : 5
+UVM_ERROR /home/foo/bar/bob/alice/foo/bar/bob/alice/env.svh(45) @ 25 ns: uvm_test_top.some_top_env.some_uvc.some_agent.some_monitor [m_im_a_monitor] this is a very important print, it is here to tell you that the index value in this loop is currently equal to : 6
+UVM_FATAL /home/foo/bar/bob/alice/foo/bar/bob/alice/env.svh(46) @ 25 ns: uvm_test_top.some_top_env.some_uvc.some_agent.some_monitor [m_im_a_monitor] this is a very important print, it is here to tell you that the index value in this loop is currently equal to : 7
+UVM_FATAL /home/foo/bar/bob/alice/foo/bar/bob/alice/env.svh(47) @ 25 ns: uvm_test_top.some_top_env.some_uvc.some_agent.some_monitor [m_im_a_monitor] this is a very important print, it is here to tell you that the index value in this loop is currently equal to : 8
+
+
