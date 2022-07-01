@@ -17,11 +17,15 @@ download the file and put into ~/.vim/syntax/log.vim
 
 Then add this to your ~/.vimrc configuration file:
 
+
+```
+syntax on
+
 augroup filetypedetect
   autocmd BufNewFile,BufRead <something that matches your UVM log file names> setf log 
 augroup END
-
+```
 for <something that matches your UVM log file names> you can use wildcard with *.
-  
+
   
 Cheers
