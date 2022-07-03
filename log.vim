@@ -12,18 +12,18 @@ syn match uvm_warning "UVM_WARNING"
 syn match uvm_error "UVM_ERROR"
 syn match uvm_fatal "UVM_FATAL"
 
-syn region id start="\[[A-Za-z]" end="]" oneline
-"file path up to file name
-syn match dirpath "\v\/[\.a-zA-Z_\/0-9\-]+\/" "conceal
 
-"file path
+"file path - instead of this I decided to highlight the dirpath and the 
+"file name separately. This is because I sometimes like to run a command
+"that removes the dir path and leave only the file name.
 "syn region filepath start="\/" end="[^\(]\+" conceal oneline
-"filename
+
+syn match dirpath "\v\/[\.a-zA-Z_\/0-9\-]+\/" "conceal
 syn match filename "\v\w+\.[^(]+"  
 syn region timestamp start="@" end=" .s:" oneline
 syn region hier start="uvm_test_top" end=" " oneline
+syn region id start="\[[A-Za-z]" end="]" oneline
 syn match msg "\( \[.*] \)\@<=.*$"
-"why is this not working? i want to color multi line message
 syn match msg_linebreak "^\(\(.*UVM_.*\)\@!.\)*$"
 
 hi def link uvm_info Comment
