@@ -1,17 +1,33 @@
 " Vim syntax file
 " Language: UVM LOG FILES
 " Maintainer: Nimrod Weinberg
-" Latest Revision: June 27th 2022
 
 if exists("b:current_syntax")
   finish
 endif
 
+"without setting the parameters below, vim will sometimes fails on 
+"very long lines. Sometimes you will see the error message, but
+"sometimes it will flash too quickly. I set these values based
+"on the times I was able to see the error messge. I set them as an
+"arbitrary multiplication of their default value.
+"I will revisit these values if I see more failures in the future.
+"by the way, if syntax does disappear at some point, I think ctrl+L
+"brings it back.
+
+"Maximum column in which to search for syntax items.
+set synmaxcol=9000
+
+"Maximum amount of memory (in Kbyte) to use for pattern matching.
+set maxmempattern=5000
+
+"The time in milliseconds for redrawing the display.
+set redrawtime=5000
+
 syn match uvm_info "UVM_INFO"
 syn match uvm_warning "UVM_WARNING"
 syn match uvm_error "UVM_ERROR"
 syn match uvm_fatal "UVM_FATAL"
-
 
 "file path - instead of this I decided to highlight the dirpath and the 
 "file name separately. This is because I sometimes like to run a command
