@@ -24,7 +24,7 @@ augroup filetypedetect
   autocmd BufNewFile,BufRead <something that matches your UVM log file names> setf log 
 augroup END
 ```
-for <something that matches your UVM log file names> you can use wildcard with *.
+for \<something that matches your UVM log file names> you can use wildcard with *.
 
   
 Cheers
