@@ -1,8 +1,16 @@
 # vim_UVM_log_syntax
 Coloring the different parts of a UVM message in vim.
 
+I find UVM logs to be difficult to read due to how long each line is, coupled with the fact that each line holds 7 different constructs.
 
-I find UVM logs to be difficult to read due to how long each line is. 
+```<msg type> <path>(<line number>) @ <simulation time>: <hierarchy> [<id>] <message>```
+
+For components, and
+
+```<msg type> <path>(<line number>) @ <simulation time>: <reporter> [<id>] <message>```
+
+for objects.
+
 This length causes multiple wraps for each line and it's not clear where one should look to read the parts that are actually important.
 
 ![image](https://user-images.githubusercontent.com/22510874/176796330-a5091c9b-3b58-42fe-8a86-cf6cfc2b105e.png)
