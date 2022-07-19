@@ -1,4 +1,7 @@
 # vim_UVM_log_syntax
+
+uvm session log coloring
+
 Coloring the different parts of a UVM message in vim.
 
 I find UVM logs to be difficult to read due to how long each line is, coupled with the fact that each line holds 7 different constructs.
