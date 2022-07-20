@@ -1,4 +1,4 @@
-# vim_UVM_log_syntax
+# uvm-log-colors-for-vim
 
 uvm session log coloring
 
