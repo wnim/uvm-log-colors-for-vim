@@ -16,12 +16,13 @@ for objects.
 
 This length causes multiple wraps for each line and it's not clear where one should look to read the parts that are actually important.
 
-![image](https://user-images.githubusercontent.com/22510874/176796330-a5091c9b-3b58-42fe-8a86-cf6cfc2b105e.png)
+![image](https://user-images.githubusercontent.com/22510874/179869700-72a1930a-7816-4128-8ec6-06705b63161a.png)
 
-But with the syntax highlighting, you will know where to focus regardless of how the line is wrapping:
+To solve this, I defined a vim syntax file that colors each construct in a different color.
 
-![image](https://user-images.githubusercontent.com/22510874/176796415-c2e51a4b-bd90-4d86-9b00-7346b5060177.png)
+![image](https://user-images.githubusercontent.com/22510874/179869653-f1dad225-6bac-474b-982b-6a40ddb6859a.png)
 
+Now it is easy to find whichever part in the UVM message you want to read most, because they are all distinct.
 
 # installation
 download the log.vim file and put into ~/.vim/syntax/log.vim
