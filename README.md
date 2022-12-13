@@ -38,5 +38,6 @@ augroup END
 ```
 for \<something that matches your UVM log file names> you can use wildcard with *.
 
+If the logs become slow due to the syntax coloring, comment the "message" from the syntax file, it's the heavy one.
   
 Cheers
