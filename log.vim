@@ -45,12 +45,12 @@ syn match msg_linebreak "^\(\(.*UVM_.*\)\@!.\)*$"
 hi def link uvm_info Comment
 hi def link uvm_warning Constant
 hi def link uvm_error Identifier
-hi def link uvm_fatal vimCommand 
+hi def link uvm_fatal Statement 
 hi def link dirpath Special
 hi def link filename Special
 hi def link timestamp function
 hi def link hier Identifier
-hi def link id vimCommand
+hi def link id Statement
 hi def link msg type
 hi def link msg_linebreak type
 
@@ -58,12 +58,4 @@ hi def link msg_linebreak type
 "set conceallevel=1
 "set concealcursor=ncv
 
-"each line will contain identifiers that have the same color in oceanicnext
-"color scheme
-"PreProc identifier - torqoise
-"special  constant - purple
-"Error - yellow
-"statement - gray
-"normal comment vimWarn- white
-"underlines - white underlined
-"type vimOption - yellow
+
