@@ -1,8 +1,8 @@
 # uvm-log-colors-for-vim
 
-uvm session log coloring
+## uvm session log coloring
 
-Coloring the different parts of a UVM message in vim.
+### Coloring the different parts of a UVM message in vim.
 
 I find UVM logs to be difficult to read due to how long each line is, coupled with the fact that each line holds 7 different constructs.
 
@@ -33,11 +33,10 @@ Then add this to your ~/.vimrc configuration file:
 syntax on
 
 augroup filetypedetect
-  autocmd BufNewFile,BufRead <something that matches your UVM log file names> setf log 
+  autocmd BufNewFile,BufRead *sim.log setf log 
 augroup END
 ```
-for \<something that matches your UVM log file names> you can use wildcard with *.
 
-If the logs become slow due to the syntax coloring, comment the "message" from the syntax file, it's the heavy one.
+Assuming your UVM logs all end with "sim.log"
   
 Cheers
