@@ -35,6 +35,7 @@ syn match uvm_fatal "UVM_FATAL"
 "syn region filepath start="\/" end="[^\(]\+" conceal oneline
 
 syn match dirpath "\v\/[\.a-zA-Z_\/0-9\-]+\/" "conceal
+"syn match dirpath "\v[\.a-zA-Z_\/0-9\-]+\/" "Some places don't start the filepath with / 
 syn match filename "\v\w+\.[^(]+"  
 syn region timestamp start="@" end=" .s:" oneline
 syn region hier start="uvm_test_top" end=" " oneline
@@ -43,14 +44,14 @@ syn match msg "\( \[.*] \)\@<=.*$"
 syn match msg_linebreak "^\(\(.*UVM_.*\)\@!.\)*$"
 
 hi def link uvm_info Comment
-hi def link uvm_warning Constant
-hi def link uvm_error Identifier
-hi def link uvm_fatal Statement 
+hi def link uvm_warning Identifier
+hi def link uvm_error Constant
+hi def link uvm_fatal Statement
 hi def link dirpath Special
 hi def link filename Special
-hi def link timestamp function
-hi def link hier Identifier
-hi def link id Statement
+hi def link timestamp Function
+hi def link hier Conditional
+hi def link id Debug
 hi def link msg type
 hi def link msg_linebreak type
 
