@@ -6,7 +6,7 @@ if exists("b:current_syntax")
   finish
 endif
 
-"without setting the parameters below, vim will sometimes fails on 
+"without setting the parameters below, vim will sometimes fail on 
 "very long lines. Sometimes you will see the error message, but
 "sometimes it will flash too quickly. I set these values based
 "on the times I was able to see the error messge. I set them as an
@@ -34,26 +34,31 @@ syn match uvm_fatal "UVM_FATAL"
 "that removes the dir path and leave only the file name.
 "syn region filepath start="\/" end="[^\(]\+" conceal oneline
 
-syn match dirpath "\v\/[\.a-zA-Z_\/0-9\-]+\/" "conceal
-"syn match dirpath "\v[\.a-zA-Z_\/0-9\-]+\/" "Some places don't start the filepath with / 
+syn match dirpath '\v\/[\.a-zA-Z_\/0-9\-]+\/'
+"Some places don't start the filepath with / 
+"syn match dirpath '\v[\.a-zA-Z_\/0-9\-]+\/' 
 syn match filename "\v\w+\.[^(]+"  
-syn region timestamp start="@" end=" .s:" oneline
+syn region timestamp start="@" end="[fpnum]s:" oneline
 syn region hier start="uvm_test_top" end=" " oneline
 syn region id start="\[[A-Za-z]" end="]" oneline
 syn match msg "\( \[.*] \)\@<=.*$"
 syn match msg_linebreak "^\(\(.*UVM_.*\)\@!.\)*$"
 
+" run :help group-name
 hi def link uvm_info Comment
 hi def link uvm_warning Identifier
-hi def link uvm_error Constant
-hi def link uvm_fatal Statement
+hi def link uvm_error Number
+hi def link uvm_fatal Boolean
 hi def link dirpath Special
 hi def link filename Special
 hi def link timestamp Function
 hi def link hier Conditional
-hi def link id Debug
+hi def link id Boolean
 hi def link msg type
 hi def link msg_linebreak type
+
+
+
 
 "gave this up because conceal works badly with linewrap
 "set conceallevel=1
