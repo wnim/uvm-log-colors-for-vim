@@ -40,9 +40,10 @@ syn match dirpath '\v\/[\.a-zA-Z_\/0-9\-]+\/'
 syn match filename "\v\w+\.[^(]+"  
 syn region timestamp start="@" end="[fpnum]s:" oneline
 syn region hier start="uvm_test_top" end=" " oneline
-syn region id start="\[[A-Za-z]" end="]" oneline
-syn match msg "\( \[.*] \)\@<=.*$"
-syn match msg_linebreak "^\(\(.*UVM_.*\)\@!.\)*$"
+syn region id start="\[[A-Za-z]" end="] " oneline
+"Searching for the msg is too slow
+syn match msg '\( \[.*] \)\@<=.*$'
+"syn match msg_linebreak '^\(\(.*UVM_.*\)\@!.\)*$'
 
 " run :help group-name
 hi def link uvm_info Comment
@@ -60,8 +61,25 @@ hi def link msg_linebreak type
 
 
 
+
+
 "gave this up because conceal works badly with linewrap
 "set conceallevel=1
 "set concealcursor=ncv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
